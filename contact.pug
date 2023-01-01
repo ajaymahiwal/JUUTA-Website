@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title JUUTA.COM
+
+
+  body
+    nav#navbar 
+        ul 
+            div#logo 
+                a(href="/")
+                  img(src="../static/shoelogo.jpeg",alt="something wrong")
+                p #[a(href="/") HOME]
+            div#men 
+                a(href="/men") 
+                  img(src="../static/menshoes.jpg",alt="something wrong")
+                p #[a(href="/men") MEN]
+            div#lady 
+                a(href="/women") 
+                  img(src="../static/ladiesshoes.jpg",alt="something wrong")
+                p #[a(href="/women") WOMEN]
+            div#kid 
+                a(href="/kid") 
+                  img(src="../static/kidsshoes.jpg",alt="something wrong")
+                p #[a(href="/kid") KIDS]
+            div#kid 
+                a(href="/contact") 
+                  img(src="../static/contact.jpg",alt="something wrong")
+                p #[a(href="contact") CONTACT US]
+            div#search
+                input(type="text" name="title" placeholder="Search Here...")
+  div#container
+
+    h1 CONTACT US
+    form(action="/contact",method="post" id="conform") 
+      input(type="text", name="name" ,class="items" ,placeholder="ENTER YOUR FULL NAME")
+      input(type="number" ,name="age" ,class="items", placeholder="ENTER YOUR AGE")
+      input(type="tele", name="phoneno" ,class="items" ,placeholder="ENTER YOUR PHONE NO.")
+      input(type="text" name="gender", class="items" ,placeholder="ENTER YOUR GENDER")
+      input(type="email" ,name="email" ,class="items" ,placeholder="ENTER YOUR EMAIL")
+      input(type="text", name="address", class="items" ,placeholder="ENTER YOUR ADDRESS")
+      input(type="text" ,name="conceren" ,class="items", placeholder="ENTER YOUR CONCEREN")
+      button.btn 
+          |SUBMIT
+          
